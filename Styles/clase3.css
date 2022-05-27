@@ -1,0 +1,267 @@
+*{
+    margin: 5px;
+    padding: 5px;
+
+    background-color: #e9f5f8;
+}
+
+
+h1{
+    color:rgb(36, 1, 78);
+    font-size: 150px;
+    font-family:'Square Peg', cursive;
+    position: relative;
+    text-align: center;
+    box-shadow: 10px 10px 10px 0 rgb(196, 239, 252);;
+ }
+
+.titulo2{
+    color:rgb(88, 39, 39);
+    font-size: 50px;
+    font-family:'Square Peg', cursive;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30px;
+
+}
+
+.titulo3{
+    color:rgb(88, 39, 39);
+    font-size: 20px;
+    font-family:cursive;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30px;   
+}
+
+    .menu-nav{ 
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+    margin: 25px;
+    padding: 10px 5px;
+    align-items: center;
+    box-shadow: 10px 10px 10px 0 rgb(235, 144, 144);       
+    }
+
+    .nav-enlace{
+       text-decoration: none;
+       font-family:'Square Peg', cursive;
+       color:rgb(182, 32, 32);
+       font-size: 20px;    
+    }
+
+    .nav-enlace:hover{
+       font-size: 30px;
+       font-weight: 800;      
+    }
+
+  .face-insta{
+     max-width: 50px;
+     filter: brightness(2);
+     mix-blend-mode: multiply;
+     border-radius: 10%;
+     justify-content: left;
+     background: #f1dad7;
+  }
+
+.img{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+ }
+
+ .img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8{ 
+    width: 60% ;
+    height:70% ;
+    border-radius: 0%;
+    box-shadow: 10px 10px 10px 0 #e9ada5;
+    transition: all 1s;
+    }
+
+        .img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover,.img7:hover,.img8:hover{ 
+            width: 100% ;
+            height:100% ;
+            border-radius: 10%;
+            box-shadow: 10px 10px 10px 0 rgb(88, 39, 39);
+            }
+
+/*-------------- Comienza Estilo para fechaDeMaratones.html:----------------*/
+ .madre{
+   
+   display: flex;
+   flex-flow: column nowrap;
+            
+     }
+            
+ .header{
+               
+    display: flex;
+    flex-flow: column nowrap;
+     }
+
+
+.tabla{
+    position:relative;
+    width: 80%;
+     
+  }
+
+.video{
+    height: auto;
+    width: 100%;
+    
+}
+
+.section-extra{
+  
+    display: flex ;
+   
+}
+
+    .noticias{
+     
+        flex: 2 1 auto;
+        
+    }
+      
+.aside{
+    flex: 1 1 auto;
+    padding: 100px;
+ }
+    .publi1{
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+     }
+    .publi2{
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+     }
+     .publi3{
+        width: 100%;
+           height: 100%;
+           border-radius: 10%;
+         }
+           
+
+/*------------ Comienzo de Media Queires------------------*/
+@media screen and (max-width:480px){
+    .menu-nav{
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(163, 73, 73) ;
+       }
+    .nav-enlace{
+        background-color:rgb(163, 73, 73) ;
+        color:#e9ada5; 
+       }
+       .img{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 5px;
+     }
+
+     .titulo2{
+        color:rgb(88, 39, 39);
+        font-size: 40px;
+        font-family:'Square Peg', cursive;
+        position: relative;
+        margin-top: 40px;
+        margin-left: 20px;       
+     }
+
+     .tabla{
+         
+        position: relative;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 5px;
+        transform: scale(.8);
+
+     }
+     .section-extra{
+  
+        display: flex ;
+        flex-wrap: wrap;
+        padding: 0;
+       
+    }    
+    .noticias{
+         
+            flex: 1 1 auto;
+            
+        }
+
+}
+
+@media screen and (max-width:768px){
+    .menu-nav{
+        display: flex;
+        flex-direction: column;
+       }
+       .img{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 5px;
+     }
+     h1{
+        color:rgb(88, 39, 39);
+        font-size: 100px;
+        font-family:'Square Peg', cursive;
+        position: relative;
+        text-align: center;
+     }
+     .titulo2{
+        color:rgb(88, 39, 39);
+        font-size: 40px;
+        font-family:'Square Peg', cursive;
+        position: relative;
+        margin-top: 40px;
+        margin-left: 20px;
+     }
+     .section-tabla{
+        display: flex;
+        flex: wrap;
+        
+     }
+     .tabla{
+        position: relative;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 5px;
+        position:relative;
+        width: 80%;
+     }
+
+     .section-extra{
+  
+        display: flex ;
+        flex-wrap: wrap;
+        padding: 0;
+       
+    }
+    
+        .noticias{
+         
+            flex: 1 1 auto;
+            
+        }
+
+}
